@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Dul'c-coffe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffaf4;
+            padding: 40px;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #8B4513;
+            margin-bottom: 30px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .nav {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .nav a {
+            background-color: #8B4513;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav a:hover {
+            background-color: #A0522D;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Galería</h1>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" alt="Taza de café">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Postre de vitrina">
+        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d" alt="Pastel de chocolate">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Interior de cafetería">
+        <img src="https://images.unsplash.com/photo-1515442261605-cd4a81f945a6" alt="Decoración rústica">
+        <img src="https://images.unsplash.com/photo-1587314168485-3236c97362c2" alt="Pan dulce sobre mesa">
+    </div>
+    <div class="nav">
+        <a href="portada.html">Inicio</a>
+        <a href="nosotros.html">Sobre Nosotros</a>
+        <a href="menu.html">Menú</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+</body>
+
+</html>
